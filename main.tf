@@ -39,7 +39,7 @@ resource "aws_security_group" "web_sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["27.34.66.174/32"]  #cidr_blocks = ["YOUR_IP/32"] You can your ip through this command "curl -4 ifconfig.me"
+    cidr_blocks = ["27.34.66.174/32"]  #cidr_blocks = ["YOUR_IP/32"] You need to use your ip through this command "curl -4 ifconfig.me"
   }
 
   egress {
